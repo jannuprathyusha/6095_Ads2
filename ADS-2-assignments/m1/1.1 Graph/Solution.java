@@ -6,7 +6,13 @@ interface Graph {
     public Iterable<Integer> adj(int v);
     public boolean hasEdge(int v, int w);
 }
+/**
+ * Class for graph theory.
+ */
 class GraphTheory implements Graph {
+	/**
+	 * { var_description }
+	 */
 	int v;
     int e;
     Bag<Integer>[] adj;
@@ -136,4 +142,3 @@ class Solution {
 		
 	}
 }
-
