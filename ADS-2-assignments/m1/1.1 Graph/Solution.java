@@ -42,12 +42,10 @@ class GraphTheory implements Graph {
         }
 		if (!hasEdge(v,w)) {
             e++;
-            
-        }
-        
-        adj[v].add(w);
-        adj[w].add(v);
-    }
+            adj[v].add(w);
+            adj[w].add(v);
+           }
+       }
 	public Iterable<Integer> adj(int v) {
 		
         return adj[v];
