@@ -1,7 +1,4 @@
 import java.util.*;
-/**
- * Interface for graph.
- */
 interface Graph {
     public int V();
     public int E();
@@ -9,13 +6,7 @@ interface Graph {
     public Iterable<Integer> adj(int v);
     public boolean hasEdge(int v, int w);
 }
-/**
- * Class for graph theory.
- */
 class GraphTheory implements Graph {
-	/**
-	 * { var_description }
-	 */
 	int v;
     int e;
     Bag<Integer>[] adj;
