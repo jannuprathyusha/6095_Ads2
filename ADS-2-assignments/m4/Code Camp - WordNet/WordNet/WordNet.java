@@ -52,7 +52,8 @@
 //             while (hf.hasNextLine()) {
 //                 String[] inputline = hf.nextLine().split(",");
 //                 for (int i = 1; i < inputline.length; i++) {
-//                     dgh.addEdge(Integer.parseInt(inputline[0]), Integer.parseInt(inputline[i]));
+//                     dgh.addEdge(Integer.parseInt(inputline[0]),
+//                      Integer.parseInt(inputline[i]));
 //                 }
 //             }
 //         } catch (Exception e) {
@@ -101,7 +102,6 @@
 //         sap = new SAP(dgh);
 //         return sap.length(id1, id2);
 //     }
-
 //     // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
 //     // in a shortest ancestral path (defined below)
 //     public String sap(String nounA, String nounB) {
@@ -117,8 +117,7 @@
 //     //     Scanner sc = new Scanner(System.in);
 //     //     String synsets = sc.nextLine();
 //     //     String hypernyms = sc.nextLine();
-//     //     WordNet wrdnet = new WordNet(synsets, hypernyms);
-        
+//     //     WordNet wrdnet = new WordNet(synsets, hypernyms);        
 //     // }
 // }
 
