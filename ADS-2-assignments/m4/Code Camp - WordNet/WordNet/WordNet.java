@@ -286,5 +286,4 @@ public class WordNet {
         int ans = sap.ancestor(id1, id2);
         return h2.get(ans);
     }
-
 }
