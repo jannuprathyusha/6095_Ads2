@@ -2,335 +2,215 @@
 Expected Output: 
 false
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 false
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
 false
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
 false
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 6: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 7: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 8: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 9: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 10: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 11: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 12: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 13: Failed ##########
 Expected Output: 
 false
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 14: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 15: Failed ##########
 Expected Output: 
 false
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 16: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 17: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 18: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 19: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 20: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 21: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 22: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 23: Failed ##########
 Expected Output: 
 true
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag
-	at Graph.<init>(Graph.java:31)
-	at Percolation.<init>(Solution.java:35)
-	at Solution.main(Solution.java:139)
-Caused by: java.lang.ClassNotFoundException: Bag
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.ve()I
+	at CC.<init>(CC.java:28)
+	at Percolation.<init>(Solution.java:40)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
