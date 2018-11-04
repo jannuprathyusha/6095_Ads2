@@ -1,15 +1,15 @@
 /**
- * Class for graph theory.
+ * Class for graph.
  */
 class Graph {
     /**
-     * vertices.
+     * integer variable vertices.
      */
-    private int v;
+    private  int vertices;
     /**
-     * edges.
+     * integer variable edges.
      */
-    private int e;
+    private int edges;
     /**
      * array of bag type.
      */
@@ -18,103 +18,114 @@ class Graph {
      * Constructs the object.
      */
     Graph() {
+
     }
     /**
      * Constructs the object.
-     *
-     * @param      v1    The v1
+     * Time complexity : O(n).
+     * @param      vertix     integer variable.
      */
-    Graph(final int v1) {
-        this.v = v1;
-        this.e = 0;
-        adj = (Bag<Integer>[]) new Bag[v1];
-        for (int i = 0; i < v; i++) {
+    Graph(final int vertix) {
+        this.vertices = vertix;
+        this.edges = 0;
+        adj = (Bag<Integer>[]) new Bag[vertix];
+        for (int i = 0; i < vertix; i++) {
             adj[i] = new Bag<Integer>();
         }
     }
     /**
-     * Gets the v.
-     *
-     * @return     The v.
+     * returns vertices.
+     * Time complexity O(1).
+     * @return  vertices.
      */
-    public int getV() {
-        return v;
+    public int ve() {
+        return vertices;
     }
     /**
-     * Gets the e.
-     *
-     * @return     The e.
+     * returns edges.
+     * Time complexity : O(1).
+     * @return edges.
      */
-    public int getE() {
-        return e;
-    }
-    /**
-     * get bag array.
-     *
-     * @return     list
-     */
-    public Bag<Integer>[] getadj() {
-        return adj;
-    }
-    /**
-     * returns number of vertices.
-     *
-     * @return    no of vertices
-     */
-    public int vertices() {
-        return v;
-    }
-    /**
-     * returns number of edges.
-     *
-     * @return    no of edges
-     */
-    public int edges() {
-        return e;
+    public int e() {
+        return edges;
     }
     /**
      * Adds an edge.
-     * complexity of method is O(1)
-     *
-     * @param      v1    integer
-     * @param      w1     integer
+     * Time complexity O(1)
+     * @param      v     integer variable.
+     * @param      w     integer variable.
      */
-    public void addEdge(final int v1, final int w1) {
-        if (v1 == w1) {
+    public void addEdge(final int v, final int w) {
+        if (!hasEdge(v, w)) {
+            edges++;
+            adj[v].add(w);
+            adj[w].add(v);
+        }
+        if (v == w) {
             return;
         }
-        if (!hasEdge(v1, w1)) {
-            e++;
-        adj[v1].add(w1);
-        adj[w1].add(v1);
-        }
-    }
-    /**
-     * returns all the values in list.
-     * complexity of this method is O(1)
-     *
-     * @param      v1     integer
-     *
-     * @return   list.
-     */
-    public Iterable<Integer> adj(final int v1) {
-        return adj[v1];
     }
     /**
      * Determines if it has edge.
-     * complexity of this method is O(N)
      *
-     * @param      v1     integer
-     * @param      w1     integer
-     *
+     * @param      v     integer variable.
+     * @param      w     integer variable.
+     * Time complexity O(v)
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v1, final int w1) {
-        for (int k : adj[v1]) {
-            if (k == w1) {
+    public boolean hasEdge(final int v, final int w) {
+        if (adj[v] == null) {
+            return true;
+        }
+        for (int i : adj[v]) {
+            if (i == w) {
                 return true;
             }
         }
         return false;
     }
+    /**
+     * iterable function.
+     *
+     * @param      v integer variable.
+     * Time complexity : O(v)
+     * @return   array.
+     */
+    public Iterable<Integer> adj(final int v) {
+        return adj[v];
+    }
+    /**
+     * matrix method.
+     * Time complexity : O(1)
+     * @return   array.
+     */
+    public Bag[] matrix() {
+        return adj;
+    }
+    /**
+     * list method.
+     * Time complexity : O(1)
+     * @return  array.
+     */
+    public Bag[] list() {
+        return adj;
+    }
+
+    /**
+     * Return a string representation of the graph.
+     */
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        String NEWLINE = System.getProperty("line.separator");
+        s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
+        for (int v = 0; v < vertices; v++) {
+            s.append(v + ": ");
+            for (int w : adj[v]) {
+                s.append(w + " ");
+            }
+            s.append(NEWLINE);
+        }
+        return s.toString();
+    }
 }
+

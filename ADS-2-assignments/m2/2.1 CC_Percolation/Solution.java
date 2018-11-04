@@ -1,121 +1,151 @@
+/* To import scanner class*/
 import java.util.Scanner;
 /**
  * Class for percolation.
  */
 class Percolation {
 /**
- * grid matrix.
+ * variable to keep count value.
  */
-    private boolean[][] grid;
+    private int cnt;
     /**
-     * top variable.
+     * to take 2 dimentional array.
      */
-    private int top = 0;
+    private int[][] grid;
     /**
-     * bottom variable.
+     * { to keep size }.
      */
-    private int bottom;
+    private int size;
     /**
-     * size variable.
+     * object for weighted addEdge class.
      */
-    private int n;
+    private Graph cd;
     /**
-     * variable for weighted quick union.
+     * cc object.
      */
-    private Graph gph;
+    private CC cc;
     /**
-     * object for CC.
-     */
-    private CC connect;
-
-    /**
-     * constructor for percolation class.
-     * @param  m integer variable.
-     */
-     Percolation(final int m) {
-        n = m;
-        bottom = n * n + 1;
-        gph = new Graph(n * n + 2);
-        grid = new boolean[n][n];
-        connect = new CC(gph);
-    }
-    /**
-     * @param i integer variable.
-     * @param j integer variable.
-     * open method for percolation class.
-     */
-    public void open(final int i, final int j) {
-        grid[i - 1][j - 1] = true;
-        if (i == 1) {
-            gph.addEdge(component(i, j), top);
-        }
-        if (i == n) {
-            gph.addEdge(component(i, j), bottom);
-        }
-
-        if (j > 1 && isOpen(i, j - 1)) {
-            gph.addEdge(component(i, j), component(i, j - 1));
-        }
-        if (j < n && isOpen(i, j + 1)) {
-            gph.addEdge(component(i, j), component(i, j + 1));
-        }
-        if (i > 1 && isOpen(i - 1, j)) {
-            gph.addEdge(component(i, j), component(i - 1, j));
-        }
-        if (i < n && isOpen(i + 1, j)) {
-            gph.addEdge(component(i, j), component(i + 1, j));
-        }
-    }
-    /**
-     * method to find the component at given indices.
+     * Constructs the object.
      *
-     * @param      i  integer variable.
-     * @param      j  integer variable.
+     * @param      n     { parameter_description }
+     */
+    Percolation(final int n) {
+        grid = new int[n][n];
+        cnt = 0;
+        cd = new Graph((n * n) + 2);
+        cc = new CC(cd);
+        this.size = n;
+    }
+    /**
+     * function to check whether the element has to be connected or not.
+     * Complexity is 1.
      *
-     * @return returns the component value.
+     * @param      row   The value of row
+     * @param      col   The value of column
      */
-    private int component(final int i, final int j) {
-        return n * (i - 1) + j;
+    void open(final int row, final int col) {
+        grid[row][col] = 1;
+        cnt++;
+        if (row == 0) {
+            cd.addEdge(0, component(row, col));
+        }
+        if (row == size - 1) {
+            cd.addEdge((size * size) + 1, component(row, col));
+        }
+        if (row + 1 < size && grid[row][col] == 1) {
+                cd.addEdge(
+                    component(row + 1, col), component(row, col));
+            }
+        if (row - 1 >= 0 && grid[row - 1][col] == 1) {
+                cd.addEdge(
+                    component(row - 1, col), component(row, col));
+        }
+        if (col - 1 >= 0 && grid[row][col - 1] == 1) {
+                cd.addEdge(component(row, col - 1), component(row, col));
+        }
+        if (col + 1 < size && grid[row][col + 1] == 1) {
+                cd.addEdge(
+                    component(row, col + 1), component(row, col));
+        }
     }
     /**
-     * checks if the given block is open or not.
-     * @param i integer variable.
-     * @param j integer variable.
-     * @return returns true if the given block is open.
+     * to get the component at the particular row and column.
+     * Complexity is 1.
+     *
+     * @param      i     row index is given.
+     * @param      j     column index is given
+     *
+     * @return     return type is int
      */
-    public boolean isOpen(final int i, final int j) {
-        return grid[i - 1][j - 1];
+    int component(final int i, final int j) {
+        return (i) * size + j;
     }
     /**
-     * checks for percolation.
-     * @return returns true if percolation is possible.
+     * Determines if open.
+     * Complexity is 1.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     True if open, False otherwise.
      */
-    public boolean percolates() {
-        connect = new CC(gph);
-        return connect.connected(top, bottom);
+    boolean isOpen(final int row, final int col) {
+        return grid[row][col] == 1;
+    }
+    /**
+     * Determines if full.
+     * Complexity is 1.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     True if full, False otherwise.
+     */
+    boolean isFull(final int row, final int col) {
+        return grid[row][col] == 0;
+    }
+    /**
+     * to get the number of open sites.
+     * Complexity is 1.
+     *
+     * @return     integer is returned.
+     */
+    int numberofopensites() {
+        return cnt;
+    }
+    /**
+     * function to check if the grid percolates or not.
+     * Complexity is N.
+     *
+     * @return     True if percolates, False otherwise.
+     */
+    boolean percolates() {
+        cc = new CC(cd);
+        return cc.connected(0, (size * size) + 1);
     }
 }
 /**
- * solution class.
+ * Class for solution.
  */
-final class Solution {
+class Solution {
     /**
      * Constructs the object.
      */
-    private Solution() {
+    protected Solution() {
+
     }
     /**
-     * main function.
+     * function of main.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        Percolation p = new Percolation(n);
-        while (sc.hasNext()) {
-            p.open(sc.nextInt(), sc.nextInt());
+        Scanner s = new Scanner(System.in);
+        int vertices = s.nextInt();
+        Percolation wc = new Percolation(vertices);
+        while (s.hasNext()) {
+        wc.open(s.nextInt() - 1, s.nextInt() - 1);
         }
-        System.out.println(p.percolates());
+        System.out.println(wc.percolates());
     }
 }
