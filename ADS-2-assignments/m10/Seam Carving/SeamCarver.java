@@ -24,7 +24,26 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		return 0;
+		 if (x == 0 || y == 0 || x == picture.width() - 1 || y == picture.height() - 1) {
+	    	return 1000;
+	    }
+	    double dx, dy = 0;
+	    double xtred = picture.get(x - 1, y).getRed();
+	    double xtblue = picture.get(x - 1, y).getBlue();
+	    double xtgreen = picture.get(x - 1, y).getGreen();
+	    double xbred = picture.get(x + 1, y).getRed();
+	    double xbblue = picture.get(x + 1, y).getBlue();
+	    double xbgreen = picture.get(x + 1, y).getGreen();
+	    double yrred = picture.get(x, y - 1).getRed();
+	    double yrblue = picture.get(x, y - 1).getBlue();
+	    double yrgreen = picture.get(x, y - 1).getGreen();
+	    double ylred = picture.get(x, y + 1).getRed();
+	    double ylblue = picture.get(x, y + 1).getBlue();
+	    double ylgreen = picture.get(x, y + 1).getGreen();
+	    dx = Math.pow(xtred - xbred, 2) + Math.pow(xtblue - xbblue, 2) + Math.pow(xtgreen - xbgreen, 2);
+	    dy = Math.pow(yrred - ylred, 2) + Math.pow(yrblue - ylblue, 2) + Math.pow(yrgreen - ylgreen, 2);
+	    double esum = Math.sqrt(dx + dy);
+	    return esum;
 	}
 
 	// sequence of indices for horizontal seam
@@ -46,4 +65,6 @@ public class SeamCarver {
 	public void removeVerticalSeam(int[] seam) {
 
 	}
+
+
 }
