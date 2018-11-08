@@ -154,7 +154,7 @@ public class LazyPrimMST {
             }
         }
 
-        // check whether it is a minimal spanning forest
+        // check that it is a minimal spanning forest
         //(cut optimality conditions)
         for (Edge e : edges()) {
 
