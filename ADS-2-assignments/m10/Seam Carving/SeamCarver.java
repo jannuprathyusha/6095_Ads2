@@ -42,8 +42,8 @@ public class SeamCarver {
 	    double ylgreen = picture.get(x, y + 1).getGreen();
 	    dx = Math.pow(xtred - xbred, 2) + Math.pow(xtblue - xbblue, 2) + Math.pow(xtgreen - xbgreen, 2);
 	    dy = Math.pow(yrred - ylred, 2) + Math.pow(yrblue - ylblue, 2) + Math.pow(yrgreen - ylgreen, 2);
-	    double esum = Math.sqrt(dx + dy);
-	    return esum;
+	    double energysum = Math.sqrt(dx + dy);
+	    return energysum;
 	}
 
 	// sequence of indices for horizontal seam
@@ -65,6 +65,4 @@ public class SeamCarver {
 	public void removeVerticalSeam(int[] seam) {
 
 	}
-
-
 }
