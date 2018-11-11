@@ -8,6 +8,7 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		int numOfCities = Integer.parseInt(sc.nextLine());
 		int numOfRoadlines = Integer.parseInt(sc.nextLine());
+		System.out.println(numOfCities + " " + "numOfCities" + " " + numOfRoadlines + " " + "numOfRoadlines");
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(numOfCities);
 		for(int i = 0; i < numOfRoadlines; i++) {
 			String[] tokens = sc.nextLine().split(" ");

@@ -8,6 +8,7 @@ Expected Output:
 4: 2-4 1.00000  1-4 5.00000  
 5:
 Your Output: 
+6 numOfCities 6 numOfRoadlines
 6 6
 0: 0-3 1.00000  0-1 2.00000  
 1: 1-2 4.00000  1-4 5.00000  0-1 2.00000  
@@ -30,6 +31,7 @@ Expected Output:
 8: 
 9: 7-9 157.00000  2-9 237.00000
 Your Output: 
+10 numOfCities 11 numOfRoadlines
 10 11
 0: 0-7 221.00000  0-4 78.00000  
 1: 1-7 158.00000  1-7 159.00000  1-6 92.00000  
@@ -46,24 +48,24 @@ Your Output:
 Expected Output: 
 No Path Found.
 Your Output: 
-
+6 numOfCities 6 numOfRoadlines
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
 370.0
 Your Output: 
-
+10 numOfCities 10 numOfRoadlines
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
 No Path Found.
 Your Output: 
-
+6 numOfCities 6 numOfRoadlines
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
 692.0
 5 2 4 0 7 1
 Your Output: 
-
+10 numOfCities 10 numOfRoadlines
 ----------------------------------------
