@@ -8,7 +8,7 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		int numOfCities = Integer.parseInt(sc.nextLine());
 		int numOfRoadlines = Integer.parseInt(sc.nextLine());
-		System.out.println(numOfCities + " " + "numOfCities" + " " + numOfRoadlines + " " + "numOfRoadlines");
+		System.out.println(numOfCities + " " + "vertices" + " " + numOfRoadlines + " " + "edges");
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(numOfCities);
 		for(int i = 0; i < numOfRoadlines; i++) {
 			String[] tokens = sc.nextLine().split(" ");
@@ -19,7 +19,7 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-		    System.out.println(graph.toString());
+		    System.out.println(graph);
 			break;
 
 		case "DirectedPaths":
