@@ -22,8 +22,8 @@ public final class Solution {
         String[] n1 = sc.nextLine().split(",");
         GraphRep obj = new GraphRep(v);
         while (sc.hasNext()) {
-            String[] n2 = sc.nextLine().split(" ");//"0" "5"
-            obj.addEdge(Integer.parseInt(n2[0]),//0,5
+            String[] n2 = sc.nextLine().split(" "); //"0" "5"
+            obj.addEdge(Integer.parseInt(n2[0]), //0,5
                 Integer.parseInt(n2[1]));
         }
         switch (token) {

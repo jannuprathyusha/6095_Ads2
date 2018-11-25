@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\6095_Ads2\ADS-2-assignments\Resubmission modules\m1\1.1 Graph\Solution.java:25:52: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6095_Ads2\ADS-2-assignments\Resubmission modules\m1\1.1 Graph\Solution.java:26:49: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 2 errors.
